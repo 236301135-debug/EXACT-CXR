@@ -42,8 +42,8 @@ plt.close("all")
 # =====================================================================
 # LOGO LOADER
 # =====================================================================
-LOGO_PATH = r"C:\Users\NIELIT\Downloads\gemini-svg.png"
-LOGO_FALLBACK_PATH = r"C:\Users\NIELIT\Downloads\gemini-svg.png"
+LOGO_PATH = r"gemini-svg.png"
+LOGO_FALLBACK_PATH = r"gemini-svg.png"
 
 _LOGO_CACHE = {"png_bytes": None}
 
