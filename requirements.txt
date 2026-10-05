@@ -1,0 +1,28 @@
+# =====================================================================
+# EXACT-CXR Clinical Safety Engine — Python Dependencies
+# ---------------------------------------------------------------------
+# No versions pinned — pip will resolve the latest compatible versions.
+# =====================================================================
+
+# ---------- Web Application Framework ----------
+streamlit
+
+# ---------- Deep Learning / Computer Vision ----------
+torch
+torchvision
+
+# ---------- Image Processing ----------
+pillow
+opencv-python
+scikit-image
+
+# ---------- Numerical / Scientific Computing ----------
+numpy
+scipy
+matplotlib
+
+# ---------- PDF Report Generation ----------
+reportlab
+
+# ---------- Optional: SVG-to-PNG rasterization (only if logo is SVG) ----------
+cairosvg
