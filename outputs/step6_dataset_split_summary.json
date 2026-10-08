@@ -1,0 +1,48 @@
+{
+  "total_images": 24,
+  "train_images": 16,
+  "validation_images": 4,
+  "test_images": 4,
+  "targets": {
+    "Pneumonia": {
+      "total": 3,
+      "train": 2,
+      "validation": 0,
+      "test": 1
+    },
+    "Cardiomegaly": {
+      "total": 4,
+      "train": 2,
+      "validation": 1,
+      "test": 1
+    },
+    "Atelectasis": {
+      "total": 1,
+      "train": 1,
+      "validation": 0,
+      "test": 0
+    },
+    "Effusion": {
+      "total": 1,
+      "train": 1,
+      "validation": 0,
+      "test": 0
+    },
+    "Consolidation": {
+      "total": 1,
+      "train": 1,
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "limitations": [
+    "Only 24 labeled images are available.",
+    "Atelectasis has only one positive image.",
+    "Effusion has only one positive image.",
+    "Consolidation has only one positive image.",
+    "Those rare classes cannot have independent positive training and test examples.",
+    "Pneumonia has one positive image reserved for the unseen test set.",
+    "Fine-tuning results are experimental.",
+    "This dataset cannot establish clinical validity."
+  ]
+}

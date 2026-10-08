@@ -1,0 +1,28 @@
+label,positive_count,negative_count
+COPD signs,1,23
+NSG tube,1,23
+air trapping,1,23
+alveolar pattern,1,23
+aortic elongation,1,23
+cardiomegaly,4,20
+consolidation,1,23
+costophrenic angle blunting,4,20
+diaphragmatic eventration,1,23
+dual chamber device,1,23
+heart insufficiency,1,23
+infiltrates,1,23
+interstitial pattern,2,22
+kyphosis,1,23
+laminar atelectasis,1,23
+nodule,1,23
+normal,9,15
+pacemaker,1,23
+pleural effusion,1,23
+pneumonia,3,21
+pulmonary fibrosis,1,23
+rib fracture,2,22
+supra aortic elongation,1,23
+unchanged,4,20
+vascular hilar enlargement,1,23
+vascular redistribution,1,23
+vertebral degenerative changes,1,23

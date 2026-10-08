@@ -1,0 +1,43 @@
+{
+  "model": "densenet121-res224-all",
+  "device": "cpu",
+  "seed": 42,
+  "input_resolution": 224,
+  "input_channels": 1,
+  "normalization": "TorchXRayVision normalize",
+  "source_bit_depth": "preserve original dtype; uint16-aware",
+  "targets": [
+    "Pneumonia",
+    "Cardiomegaly",
+    "Atelectasis",
+    "Effusion",
+    "Consolidation"
+  ],
+  "all_model_outputs": [
+    "Atelectasis",
+    "Consolidation",
+    "Infiltration",
+    "Pneumothorax",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Effusion",
+    "Pneumonia",
+    "Pleural_Thickening",
+    "Cardiomegaly",
+    "Nodule",
+    "Mass",
+    "Hernia",
+    "Lung Lesion",
+    "Fracture",
+    "Lung Opacity",
+    "Enlarged Cardiomediastinum"
+  ],
+  "csv_rows": 24,
+  "image_files_found": 24,
+  "matched_rows": 24,
+  "successful_inferences": 24,
+  "failed_inferences": 0,
+  "csv_path": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\data\\sample\\chest_x_ray_images_labels_sample.csv",
+  "image_directory": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\data\\sample"
+}

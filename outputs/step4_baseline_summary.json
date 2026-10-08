@@ -1,0 +1,145 @@
+{
+  "n_images_evaluated": 24,
+  "threshold": 0.5,
+  "ground_truth_label_column": "Labels_label",
+  "target_definitions": {
+    "Pneumonia": {
+      "prediction_column": "Pneumonia",
+      "match": "exact",
+      "labels": [
+        "pneumonia"
+      ]
+    },
+    "Cardiomegaly": {
+      "prediction_column": "Cardiomegaly",
+      "match": "exact",
+      "labels": [
+        "cardiomegaly"
+      ]
+    },
+    "Atelectasis": {
+      "prediction_column": "Atelectasis",
+      "match": "contains",
+      "labels": [
+        "atelectasis"
+      ]
+    },
+    "Effusion": {
+      "prediction_column": "Effusion",
+      "match": "exact",
+      "labels": [
+        "pleural effusion"
+      ]
+    },
+    "Consolidation": {
+      "prediction_column": "Consolidation",
+      "match": "exact",
+      "labels": [
+        "consolidation"
+      ]
+    }
+  },
+  "metrics": [
+    {
+      "target": "Pneumonia",
+      "n": 24,
+      "positive_cases": 3,
+      "negative_cases": 21,
+      "prevalence": 0.125,
+      "predicted_positive_at_0.5": 6,
+      "TP": 0,
+      "TN": 15,
+      "FP": 6,
+      "FN": 3,
+      "AUROC": 0.6190476190476191,
+      "AUPRC": 0.19761904761904764,
+      "Sensitivity": 0.0,
+      "Specificity": 0.7142857142857143,
+      "Precision": 0.0,
+      "F1": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "target": "Cardiomegaly",
+      "n": 24,
+      "positive_cases": 4,
+      "negative_cases": 20,
+      "prevalence": 0.16666666666666666,
+      "predicted_positive_at_0.5": 3,
+      "TP": 3,
+      "TN": 20,
+      "FP": 0,
+      "FN": 1,
+      "AUROC": 0.9500000000000001,
+      "AUPRC": 0.875,
+      "Sensitivity": 0.75,
+      "Specificity": 1.0,
+      "Precision": 1.0,
+      "F1": 0.8571428571428571,
+      "threshold": 0.5
+    },
+    {
+      "target": "Atelectasis",
+      "n": 24,
+      "positive_cases": 1,
+      "negative_cases": 23,
+      "prevalence": 0.041666666666666664,
+      "predicted_positive_at_0.5": 7,
+      "TP": 1,
+      "TN": 17,
+      "FP": 6,
+      "FN": 0,
+      "AUROC": 0.7391304347826086,
+      "AUPRC": 0.14285714285714285,
+      "Sensitivity": 1.0,
+      "Specificity": 0.7391304347826086,
+      "Precision": 0.14285714285714285,
+      "F1": 0.25,
+      "threshold": 0.5
+    },
+    {
+      "target": "Effusion",
+      "n": 24,
+      "positive_cases": 1,
+      "negative_cases": 23,
+      "prevalence": 0.041666666666666664,
+      "predicted_positive_at_0.5": 4,
+      "TP": 1,
+      "TN": 20,
+      "FP": 3,
+      "FN": 0,
+      "AUROC": 1.0,
+      "AUPRC": 1.0,
+      "Sensitivity": 1.0,
+      "Specificity": 0.8695652173913043,
+      "Precision": 0.25,
+      "F1": 0.4,
+      "threshold": 0.5
+    },
+    {
+      "target": "Consolidation",
+      "n": 24,
+      "positive_cases": 1,
+      "negative_cases": 23,
+      "prevalence": 0.041666666666666664,
+      "predicted_positive_at_0.5": 9,
+      "TP": 0,
+      "TN": 14,
+      "FP": 9,
+      "FN": 1,
+      "AUROC": 0.5217391304347826,
+      "AUPRC": 0.08333333333333333,
+      "Sensitivity": 0.0,
+      "Specificity": 0.6086956521739131,
+      "Precision": 0.0,
+      "F1": 0.0,
+      "threshold": 0.5
+    }
+  ],
+  "outputs": {
+    "metrics": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\outputs\\step4_baseline_metrics.csv",
+    "per_image": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\outputs\\step4_per_image_baseline_predictions.csv",
+    "failures": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\outputs\\step4_baseline_failures.csv"
+  },
+  "interpretation": "This is a small-sample pretrained-model baseline evaluation and is not clinical validation."
+}

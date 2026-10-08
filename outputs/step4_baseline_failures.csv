@@ -1,0 +1,30 @@
+ImageID,Labels,target,true,score,prediction_at_0.5
+216840111366964012558082906712010004133151165_00-119-134.png,"['laminar atelectasis', 'supra aortic elongation', 'cardiomegaly', 'unchanged']",Pneumonia,0,0.6027020812034607,1
+216840111366964013340662495472012111130929144_01-108-133.png,['normal'],Pneumonia,0,0.5737322568893433,1
+216840111366964013217898866992011329134906098_01-027-105.png,"['nodule', 'interstitial pattern', ' pulmonary fibrosis']",Pneumonia,0,0.5043290853500366,1
+216840111366964013451228379692012257110540618_02-006-005.png,['normal'],Pneumonia,0,0.8189745545387268,1
+216840111366964012373310883942009084123158919_00-069-064.png,"['infiltrates', ' pneumonia']",Pneumonia,1,0.2659718990325928,0
+216840111366964013217898866992011349123010433_01-006-043.png,"['NSG tube', 'unchanged']",Pneumonia,0,0.5163682699203491,1
+101103270798497222826083823719046670601_jw1fu2.png,"['alveolar pattern', 'cardiomegaly', 'vascular hilar enlargement', 'pleural effusion', 'pneumonia', 'costophrenic angle blunting', 'vascular redistribution', 'heart insufficiency']",Pneumonia,1,0.0792829543352127,0
+216840111366964013395900950222012171101555757_01-139-142.png,['normal'],Pneumonia,0,0.5201603174209595,1
+216840111366964013515091760022012318080539431_01-152-111.png,"['rib fracture', 'consolidation', ' pneumonia', 'costophrenic angle blunting']",Pneumonia,1,0.2367529422044754,0
+216840111366964012558082906712010004133151165_00-119-134.png,"['laminar atelectasis', 'supra aortic elongation', 'cardiomegaly', 'unchanged']",Cardiomegaly,1,0.2297161370515823,0
+216840111366964013217898866992011329134906098_01-027-105.png,"['nodule', 'interstitial pattern', ' pulmonary fibrosis']",Atelectasis,0,0.5480966567993164,1
+216840111366964013217898866992011349123010433_01-006-043.png,"['NSG tube', 'unchanged']",Atelectasis,0,0.6738085746765137,1
+216840111366964013200840352202011315131143616_01-032-099.png,"['air trapping', 'costophrenic angle blunting']",Atelectasis,0,0.5069332718849182,1
+329608354535639464795481936214199434429_kzcyhb.png,['normal'],Atelectasis,0,0.5302859544754028,1
+101103270798497222826083823719046670601_jw1fu2.png,"['alveolar pattern', 'cardiomegaly', 'vascular hilar enlargement', 'pleural effusion', 'pneumonia', 'costophrenic angle blunting', 'vascular redistribution', 'heart insufficiency']",Atelectasis,0,0.5715147256851196,1
+216840111366964013451228379692012269104148390_01-054-004.png,['normal'],Atelectasis,0,0.537256121635437,1
+216840111366964012558082906712010004133151165_00-119-134.png,"['laminar atelectasis', 'supra aortic elongation', 'cardiomegaly', 'unchanged']",Effusion,0,0.5013177394866943,1
+216840111366964013217898866992011349123010433_01-006-043.png,"['NSG tube', 'unchanged']",Effusion,0,0.5992590188980103,1
+317759408657031098460852906419716899073_2rq56f.png,"['kyphosis', 'vertebral degenerative changes', 'rib fracture']",Effusion,0,0.5288413763046265,1
+216840111366964012558082906712010004133151165_00-119-134.png,"['laminar atelectasis', 'supra aortic elongation', 'cardiomegaly', 'unchanged']",Consolidation,0,0.5048583745956421,1
+216840111366964013217898866992011329134906098_01-027-105.png,"['nodule', 'interstitial pattern', ' pulmonary fibrosis']",Consolidation,0,0.5199686884880066,1
+216840111366964013451228379692012257110540618_02-006-005.png,['normal'],Consolidation,0,0.5353906154632568,1
+216840111366964012373310883942009084123158919_00-069-064.png,"['infiltrates', ' pneumonia']",Consolidation,0,0.5203895568847656,1
+216840111366964013217898866992011349123010433_01-006-043.png,"['NSG tube', 'unchanged']",Consolidation,0,0.5417395830154419,1
+216840111366964013076187734852011291090122566_00-195-189.png,"['cardiomegaly', 'interstitial pattern', 'unchanged']",Consolidation,0,0.5121499300003052,1
+317759408657031098460852906419716899073_2rq56f.png,"['kyphosis', 'vertebral degenerative changes', 'rib fracture']",Consolidation,0,0.5118144750595093,1
+101103270798497222826083823719046670601_jw1fu2.png,"['alveolar pattern', 'cardiomegaly', 'vascular hilar enlargement', 'pleural effusion', 'pneumonia', 'costophrenic angle blunting', 'vascular redistribution', 'heart insufficiency']",Consolidation,0,0.5194674730300903,1
+216840111366964014008416513202014153161516671_01-196-149.png,['normal'],Consolidation,0,0.5032600164413452,1
+216840111366964013515091760022012318080539431_01-152-111.png,"['rib fracture', 'consolidation', ' pneumonia', 'costophrenic angle blunting']",Consolidation,1,0.2869577407836914,0

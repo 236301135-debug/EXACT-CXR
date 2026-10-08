@@ -1,0 +1,22 @@
+{
+  "csv_rows": 24,
+  "successful_audits": 24,
+  "dtypes": {
+    "uint16": 24
+  },
+  "bits_stored": {
+    "12": 21,
+    "10": 3
+  },
+  "photometric": {
+    "MONOCHROME2": 24
+  },
+  "pixel_representation": {
+    "0": 24
+  },
+  "warnings": [
+    "24 images have pixel values above the maximum implied by BitsStored_DICOM.",
+    "Multiple BitsStored_DICOM values are present."
+  ],
+  "audit_csv": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\outputs\\step2_preprocessing_audit.csv"
+}

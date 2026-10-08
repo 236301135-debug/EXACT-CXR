@@ -1,0 +1,41 @@
+{
+  "model_family": "TorchXRayVision",
+  "weights": "densenet121-res224-all",
+  "device_used_for_build": "cpu",
+  "input_size": 224,
+  "preprocessing": {
+    "source_dtype": "uint16",
+    "source_range": "[0,65535]",
+    "xrv_range": "[-1024,1024]",
+    "conversion": "(pixel / 65535) * 2048 - 1024",
+    "shape_before_xrv_transforms": "[1,H,W]",
+    "center_crop": true,
+    "resize": 224,
+    "final_tensor_shape": "[1,224,224]"
+  },
+  "targets": [
+    "Atelectasis",
+    "Consolidation",
+    "Infiltration",
+    "Pneumothorax",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Effusion",
+    "Pneumonia",
+    "Pleural_Thickening",
+    "Cardiomegaly",
+    "Nodule",
+    "Mass",
+    "Hernia",
+    "Lung Lesion",
+    "Fracture",
+    "Lung Opacity",
+    "Enlarged Cardiomediastinum"
+  ],
+  "cardiomegaly": {
+    "target_name": "Cardiomegaly",
+    "xrv_target_index": 10,
+    "threshold": 0.45
+  }
+}

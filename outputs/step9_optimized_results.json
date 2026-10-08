@@ -1,0 +1,76 @@
+{
+  "experiment": "Controlled XRV parameter optimization",
+  "n_images": 24,
+  "n_folds": 4,
+  "C_values": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "class_weights": [
+    "None",
+    "balanced"
+  ],
+  "thresholds": [
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7
+  ],
+  "best_configuration": {
+    "Pneumonia": {
+      "target": "Pneumonia",
+      "model": "xrv_features",
+      "C": 0.001,
+      "class_weight": "balanced",
+      "threshold": 0.5,
+      "auroc": 0.7301587301587302,
+      "auprc": 0.2574074074074074,
+      "sensitivity": 1.0,
+      "specificity": 0.5238095238095238,
+      "precision": 0.23076923076923078,
+      "f1": 0.375,
+      "balanced_accuracy": 0.7619047619047619,
+      "tp": 3,
+      "tn": 11,
+      "fp": 10,
+      "fn": 0
+    },
+    "Cardiomegaly": {
+      "target": "Cardiomegaly",
+      "model": "pretrained_xrv",
+      "C": NaN,
+      "class_weight": null,
+      "threshold": 0.45,
+      "auroc": 0.9500000000000001,
+      "auprc": 0.875,
+      "sensitivity": 0.75,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 0.8571428571428571,
+      "balanced_accuracy": 0.875,
+      "tp": 3,
+      "tn": 20,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "important_baseline": {
+    "cardiomegaly_AUROC": 0.95,
+    "pneumonia_AUROC": 0.6190476190476191
+  },
+  "limitations": [
+    "Only 24 images are available.",
+    "Only 3 pneumonia-positive and 4 cardiomegaly-positive cases exist.",
+    "Parameter optimization on such a small dataset can itself overfit.",
+    "Results are experimental and not clinical validation.",
+    "Atelectasis and Effusion are not included because the current CSV has zero exact positives."
+  ]
+}

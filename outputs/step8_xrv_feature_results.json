@@ -1,0 +1,200 @@
+{
+  "experiment": "Frozen XRV features + regularized logistic regression",
+  "model": "DenseNet121",
+  "weights": "densenet121-res224-all",
+  "feature_dimension": 1024,
+  "classifier": "StandardScaler + LogisticRegression",
+  "regularization": "L2",
+  "C": 0.1,
+  "n_images": 24,
+  "n_folds": 4,
+  "threshold": 0.5,
+  "targets": [
+    "Pneumonia",
+    "Cardiomegaly"
+  ],
+  "pooled_oof_metrics": {
+    "Pneumonia": {
+      "n": 24,
+      "positive": 3,
+      "negative": 21,
+      "threshold": 0.5,
+      "tp": 1,
+      "tn": 12,
+      "fp": 9,
+      "fn": 2,
+      "auroc": 0.4285714285714286,
+      "auprc": 0.25,
+      "sensitivity": 0.3333333333333333,
+      "specificity": 0.5714285714285714,
+      "precision": 0.1,
+      "f1": 0.15384615384615383,
+      "accuracy": 0.5416666666666666,
+      "balanced_accuracy": 0.45238095238095233
+    },
+    "Cardiomegaly": {
+      "n": 24,
+      "positive": 4,
+      "negative": 20,
+      "threshold": 0.5,
+      "tp": 1,
+      "tn": 14,
+      "fp": 6,
+      "fn": 3,
+      "auroc": 0.5249999999999999,
+      "auprc": 0.402072192513369,
+      "sensitivity": 0.25,
+      "specificity": 0.7,
+      "precision": 0.14285714285714285,
+      "f1": 0.18181818181818182,
+      "accuracy": 0.625,
+      "balanced_accuracy": 0.475
+    }
+  },
+  "comparison_with_step7": {
+    "Pneumonia": {
+      "step7_pretrained_xrv": {
+        "AUROC": 0.6190476190476191,
+        "AUPRC": 0.19761904761904764,
+        "Sensitivity": 0.0,
+        "Specificity": 0.7142857142857143,
+        "F1": null,
+        "BalancedAccuracy": 0.35714285714285715
+      },
+      "step8_feature_classifier": {
+        "n": 24,
+        "positive": 3,
+        "negative": 21,
+        "threshold": 0.5,
+        "tp": 1,
+        "tn": 12,
+        "fp": 9,
+        "fn": 2,
+        "auroc": 0.4285714285714286,
+        "auprc": 0.25,
+        "sensitivity": 0.3333333333333333,
+        "specificity": 0.5714285714285714,
+        "precision": 0.1,
+        "f1": 0.15384615384615383,
+        "accuracy": 0.5416666666666666,
+        "balanced_accuracy": 0.45238095238095233
+      }
+    },
+    "Cardiomegaly": {
+      "step7_pretrained_xrv": {
+        "AUROC": 0.95,
+        "AUPRC": 0.875,
+        "Sensitivity": 0.75,
+        "Specificity": 1.0,
+        "F1": 0.8571428571428571,
+        "BalancedAccuracy": 0.875
+      },
+      "step8_feature_classifier": {
+        "n": 24,
+        "positive": 4,
+        "negative": 20,
+        "threshold": 0.5,
+        "tp": 1,
+        "tn": 14,
+        "fp": 6,
+        "fn": 3,
+        "auroc": 0.5249999999999999,
+        "auprc": 0.402072192513369,
+        "sensitivity": 0.25,
+        "specificity": 0.7,
+        "precision": 0.14285714285714285,
+        "f1": 0.18181818181818182,
+        "accuracy": 0.625,
+        "balanced_accuracy": 0.475
+      }
+    }
+  },
+  "fold_information": [
+    {
+      "fold": 1,
+      "train_samples": 18,
+      "validation_samples": 6,
+      "targets": {
+        "Pneumonia": {
+          "training_positive": 2,
+          "training_negative": 16,
+          "validation_positive": 1,
+          "validation_negative": 5
+        },
+        "Cardiomegaly": {
+          "training_positive": 3,
+          "training_negative": 15,
+          "validation_positive": 1,
+          "validation_negative": 5
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_samples": 18,
+      "validation_samples": 6,
+      "targets": {
+        "Pneumonia": {
+          "training_positive": 2,
+          "training_negative": 16,
+          "validation_positive": 1,
+          "validation_negative": 5
+        },
+        "Cardiomegaly": {
+          "training_positive": 3,
+          "training_negative": 15,
+          "validation_positive": 1,
+          "validation_negative": 5
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_samples": 18,
+      "validation_samples": 6,
+      "targets": {
+        "Pneumonia": {
+          "training_positive": 2,
+          "training_negative": 16,
+          "validation_positive": 1,
+          "validation_negative": 5
+        },
+        "Cardiomegaly": {
+          "training_positive": 3,
+          "training_negative": 15,
+          "validation_positive": 1,
+          "validation_negative": 5
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_samples": 18,
+      "validation_samples": 6,
+      "targets": {
+        "Pneumonia": {
+          "training_positive": 3,
+          "training_negative": 15,
+          "validation_positive": 0,
+          "validation_negative": 6
+        },
+        "Cardiomegaly": {
+          "training_positive": 3,
+          "training_negative": 15,
+          "validation_positive": 1,
+          "validation_negative": 5
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Only 24 images are available.",
+    "Only 3 pneumonia-positive images and 4 cardiomegaly-positive images are present.",
+    "The feature classifier is evaluated using out-of-fold predictions.",
+    "A rare target can have unstable fold-level estimates.",
+    "Atelectasis and Effusion are not trained because the current CSV contains zero exact positive labels for those targets.",
+    "Consolidation has only one positive and is therefore not included in this classifier experiment.",
+    "This is experimental model evaluation and is not clinical validation.",
+    "The classifier threshold was not optimized on the final predictions."
+  ]
+}

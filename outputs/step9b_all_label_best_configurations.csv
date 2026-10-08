@@ -1,0 +1,26 @@
+label,model,C,class_weight,threshold,auroc,auprc,positives,negatives,sensitivity,specificity,precision,f1,balanced_accuracy,tp,tn,fp,fn,status
+COPD signs,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+NSG tube,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+air trapping,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+alveolar pattern,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+aortic elongation,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+cardiomegaly,xrv_features,10.0,balanced,0.35,0.6000000000000001,0.4364801864801865,4,20,0.25,1.0,1.0,0.4,0.625,1.0,20.0,0.0,3.0,best_experimental_configuration
+consolidation,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+costophrenic angle blunting,xrv_features,10.0,balanced,0.3,0.75,0.45436507936507936,4,20,0.5,0.95,0.6666666666666666,0.5714285714285715,0.725,2.0,19.0,1.0,2.0,best_experimental_configuration
+diaphragmatic eventration,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+dual chamber device,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+heart insufficiency,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+infiltrates,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+interstitial pattern,xrv_features,10.0,,0.3,0.6363636363636364,0.16025641025641024,2,22,0.0,1.0,0.0,0.0,0.5,0.0,22.0,0.0,2.0,best_experimental_configuration
+kyphosis,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+laminar atelectasis,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+nodule,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+pacemaker,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+pleural effusion,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+pneumonia,xrv_features,0.001,balanced,0.4,0.8571428571428572,0.6,3,21,1.0,0.6666666666666666,0.3,0.4615384615384615,0.8333333333333333,3.0,14.0,7.0,0.0,best_experimental_configuration
+pulmonary fibrosis,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+rib fracture,xrv_features,0.001,,0.3,0.29545454545454547,0.08680555555555555,2,22,0.0,1.0,0.0,0.0,0.5,0.0,22.0,0.0,2.0,best_experimental_configuration
+supra aortic elongation,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+vascular hilar enlargement,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+vascular redistribution,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA
+vertebral degenerative changes,,,,,,,1,23,,,,,,,,,,INSUFFICIENT_DATA

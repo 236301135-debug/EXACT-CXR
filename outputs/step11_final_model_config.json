@@ -1,0 +1,69 @@
+{
+  "project": "EXACT-CXR",
+  "step": 11,
+  "dataset": {
+    "images_used": 24,
+    "source_csv": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\data\\sample\\chest_x_ray_images_labels_sample.csv",
+    "clinical_validation": false,
+    "warning": "Experimental research results only. Not clinical validation."
+  },
+  "base_model": {
+    "family": "TorchXRayVision",
+    "weights": "densenet121-res224-all",
+    "input_size": 224
+  },
+  "preprocessing": {
+    "source_dtype": "uint16",
+    "source_range": [
+      0,
+      65535
+    ],
+    "normalized_range": [
+      -1024,
+      1024
+    ],
+    "center_crop": true,
+    "resize": 224
+  },
+  "models": {
+    "cardiomegaly": {
+      "label": "Cardiomegaly",
+      "model_type": "pretrained_xrv",
+      "xrv_target": "Cardiomegaly",
+      "xrv_target_index": 10,
+      "threshold": 0.45,
+      "step10_status": "EXPERIMENTAL_BEST",
+      "step10_auroc": 0.95,
+      "step10_auprc": 0.875,
+      "step10_f1": 0.8571428571428571
+    },
+    "pneumonia": {
+      "label": "Pneumonia",
+      "model_type": "xrv_features_logistic_regression",
+      "artifact": "C:\\Users\\NIELIT\\Videos\\EXACT-CXR-XR\\outputs\\step11_pneumonia_xrv_feature_lr.pkl",
+      "xrv_weights": "densenet121-res224-all",
+      "feature_dimension": 1024,
+      "C": 0.001,
+      "class_weight": "balanced",
+      "threshold": 0.4,
+      "step10_status": "EXPERIMENTAL_BEST",
+      "step10_auroc": 0.8571428571428572,
+      "step10_auprc": 0.6,
+      "step10_f1": 0.4615384615384615
+    }
+  },
+  "not_deployed": {
+    "costophrenic_angle_blunting": {
+      "status": "EXPERIMENTAL_ONLY",
+      "reason": "Only 4 positive examples; not deployed."
+    },
+    "interstitial_pattern": {
+      "status": "EXPERIMENTAL_ONLY",
+      "reason": "Only 2 positive examples and current F1 is 0; not deployed."
+    },
+    "rib_fracture": {
+      "status": "EXPERIMENTAL_ONLY",
+      "reason": "AUROC 0.295 and sensitivity 0; not deployed."
+    }
+  }
+}
