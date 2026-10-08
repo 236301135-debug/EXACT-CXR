@@ -64,7 +64,7 @@ PNEUMONIA_THRESHOLD_DEFAULT = 0.40
 # =====================================================================
 # LOGO LOADER
 # =====================================================================
-LOGO_PATH = r"gemini-svg.png"
+LOGO_PATH = r"C:\Users\NIELIT\Downloads\gemini-svg.png"
 LOGO_FALLBACK_PATH = LOGO_PATH
 _LOGO_CACHE = {"png_bytes": None}
 
@@ -1865,10 +1865,39 @@ if uploaded_file is not None:
             st.info("The interactive dashboard is unaffected. Please retry or check reportlab installation.")
 
         st.markdown("""
-        <div class="footer-note">
-            EXACT-CXR Clinical Safety Engine · Research Use Only · Not for primary diagnostic decision-making
-        </div>
-        """, unsafe_allow_html=True)
+<style>
+    .footer-container {
+        text-align: center;
+        padding: 16px 20px;
+        margin-top: 40px;
+        background: linear-gradient(135deg, rgba(14, 116, 144, 0.08) 0%, rgba(15, 23, 42, 0.05) 100%);
+        border-radius: 12px;
+        border: 1px solid rgba(14, 116, 144, 0.2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    .footer-text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: #475569;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    .author-name {
+        font-weight: 700;
+        background: linear-gradient(90deg, #0284c7 0%, #2563eb 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div class="footer-container">
+    <div class="footer-text">
+        Developed, Designed & Owned by <span class="author-name">MOVVA RAKESH</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
     except Exception as e:
         st.error(f"Execution Error: {str(e)}")
