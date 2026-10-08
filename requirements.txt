@@ -10,10 +10,11 @@ streamlit
 # ---------- Deep Learning / Computer Vision ----------
 torch
 torchvision
+torchxrayvision
 
 # ---------- Image Processing ----------
 pillow
-opencv-python
+opencv-python-headless
 scikit-image
 
 # ---------- Numerical / Scientific Computing ----------
@@ -26,5 +27,3 @@ reportlab
 
 # ---------- Optional: SVG-to-PNG rasterization (only if logo is SVG) ----------
 cairosvg
-
-opencv-python-headless
