@@ -26,3 +26,5 @@ reportlab
 
 # ---------- Optional: SVG-to-PNG rasterization (only if logo is SVG) ----------
 cairosvg
+
+opencv-python-headless
