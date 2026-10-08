@@ -64,7 +64,7 @@ PNEUMONIA_THRESHOLD_DEFAULT = 0.40
 # =====================================================================
 # LOGO LOADER
 # =====================================================================
-LOGO_PATH = r"C:\Users\NIELIT\Downloads\gemini-svg.png"
+LOGO_PATH = r"gemini-svg.png"
 LOGO_FALLBACK_PATH = LOGO_PATH
 _LOGO_CACHE = {"png_bytes": None}
 
